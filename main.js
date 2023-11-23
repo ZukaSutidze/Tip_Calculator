@@ -67,7 +67,7 @@ function calculateTipAndTotal() {
         Total.innerHTML = "$0.00"
         Error1.innerHTML = ""
     } else if (Adamianebi.value < "0") {
-        Error1.innerHTML = "Can't Be Zero"
+        Error1.innerHTML = "Can't Be Negative"
     } else {
           if (Custom.value) {
                 percent = Number(Custom.value)
