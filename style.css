@@ -116,7 +116,6 @@ body{
 }
 
 .Custom::placeholder{
-    width: 111.487px;
     color: #547878;
     text-align: right;
     font-family: "Space Mono";
@@ -204,7 +203,6 @@ input::-webkit-inner-spin-button {
     font-size: 24px;
     font-weight: 700;
     position: absolute;
-    width: 72.282px;
     right: 17px;
     top: 4px;
     opacity: 0.35;
