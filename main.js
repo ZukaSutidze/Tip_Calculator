@@ -104,9 +104,11 @@ Custom.addEventListener("focus", function () {
         boxes[i].classList.remove("Cyan");
         procenti[i].classList.remove("Mwvane");
     }
-    Adamianebi.value = ""
-    Tip.innerHTML = "$0.00"
-    Total.innerHTML = "$0.00"
+    
+})
+
+Custom.addEventListener("input", function () {
+    calculateTipAndTotal();
 })
  
 
