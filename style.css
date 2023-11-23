@@ -121,9 +121,6 @@ body{
     font-family: "Space Mono";
     font-size: 24px;
     font-weight: 700;
-    position: absolute;
-    left: 19px;
-    top: 2px;
     opacity: 0.35;
 }
 
@@ -202,9 +199,6 @@ input::-webkit-inner-spin-button {
     font-family: "Space Mono";
     font-size: 24px;
     font-weight: 700;
-    position: absolute;
-    right: 17px;
-    top: 4px;
     opacity: 0.35;
 }
 
