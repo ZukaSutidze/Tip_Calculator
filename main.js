@@ -21,6 +21,9 @@ for (let i = 0; i < boxes.length; i++) {
         }
         Custom.value = ""
         percent = parseInt(procenti[i].innerText);
+        if (isNaN(percent)) {
+            percent = 0;
+        }
         calculateTipAndTotal();
     });
 }
@@ -32,6 +35,10 @@ Bill.addEventListener("focus", function () {
 Custom.addEventListener("focus", function () {
     Custom.classList.toggle("Outliner")
 })
+
+Bill.addEventListener("input", function () {
+    calculateTipAndTotal();
+});
 
 Adamianebi.addEventListener("focus", function () {
     Adamianebi.classList.toggle("Outliner2")
