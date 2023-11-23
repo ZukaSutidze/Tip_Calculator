@@ -92,6 +92,7 @@ Button.addEventListener("click", function () {
     Custom.value = "";
     Tip.innerHTML = "$0.00";
     Total.innerHTML = "$0.00";
+    percent = 0;
 
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].classList.remove("Cyan");
