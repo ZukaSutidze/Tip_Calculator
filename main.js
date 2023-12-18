@@ -7,6 +7,7 @@ let Tip = document.querySelector(".Tip");
 let Total = document.querySelector(".Total");
 let Error1 = document.querySelector(".Error");
 let Button = document.querySelector("button");
+let Inputs = document.querySelectorAll("input")
 let percent = 0;
 
 for (let i = 0; i < boxes.length; i++) {
@@ -27,6 +28,10 @@ for (let i = 0; i < boxes.length; i++) {
         calculateTipAndTotal();
     });
 }
+
+
+
+
 
 Bill.addEventListener("focus", function () {
     Bill.classList.toggle("Outliner")
@@ -58,8 +63,8 @@ Adamianebi.addEventListener("blur", function () {
 
 
 function calculateTipAndTotal() {
-    if (Adamianebi.value === "0") {
-        Error1.innerHTML = "Can't Be Zero"
+    if (Adamianebi.value === "0" || Adamianebi.value > 10000 || Custom.value > 100 || Bill.value > 10000 ) {
+        Error1.innerHTML = "Can't Be That"
         Tip.innerHTML = "$0.00"
         Total.innerHTML = "$0.00"
     } else if (Adamianebi.value.trim() === "") {
